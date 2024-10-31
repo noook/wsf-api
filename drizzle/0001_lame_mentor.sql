@@ -1,0 +1,1 @@
+ALTER TABLE "links" ALTER COLUMN "slug" SET DATA TYPE text;
