@@ -50,6 +50,13 @@ cp .env.example .env
 
 Fill the `.env` file with the correct values. The `DATABASE_URL` is the most important one, if you are using the default configuration, the value should be `postgres://postgres:postgres@localhost:5445/url-shortener`.
 
+Generate your Github OAuth App credentials [here](https://github.com/settings/developers). You'll need to provide in your `.env` file the following values:
+- `NITRO_GITHUB_CLIENT_ID`
+- `NITRO_GITHUB_CLIENT_SECRET`
+- `NITRO_GITHUB_REDIRECT_URI`
+
+Those will be automatically added to your [runtime config](https://nitro.unjs.io/guide/configuration#runtime-configuration)
+
 ## Using Drizzle
 
 Drizzle is an ORM (Object-Relational Mapping) that helps you interact with your database. It's a powerful tool that abstracts the SQL queries and allows
